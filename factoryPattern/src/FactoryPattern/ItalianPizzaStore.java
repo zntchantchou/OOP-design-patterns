@@ -1,4 +1,4 @@
-package factortyPattern;
+package FactoryPattern;
 
 public class ItalianPizzaStore extends PizzaStore{
 	public ItalianPizzaStore() {}

@@ -1,4 +1,4 @@
-package factortyPattern;
+package FactoryPattern;
 
 public class GermanPizzaStore extends PizzaStore {
 
@@ -14,5 +14,4 @@ public class GermanPizzaStore extends PizzaStore {
 		}
 		return pizza;
 	}
-	
 }

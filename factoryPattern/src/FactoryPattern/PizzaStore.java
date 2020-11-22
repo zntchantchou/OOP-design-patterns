@@ -1,4 +1,4 @@
-package factortyPattern;
+package FactoryPattern;
 
 public abstract class PizzaStore {
 	public PizzaStore() {
@@ -19,3 +19,4 @@ public abstract class PizzaStore {
 	}
 	 abstract Pizza createPizza(String type);
 }
+
