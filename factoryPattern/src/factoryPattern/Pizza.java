@@ -1,4 +1,5 @@
-package FactoryPattern;
+package factoryPattern;
+
 
 import java.util.ArrayList;
 

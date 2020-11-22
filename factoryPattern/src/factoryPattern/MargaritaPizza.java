@@ -1,4 +1,5 @@
-package FactoryPattern;
+package factoryPattern;
+
 
 public class MargaritaPizza extends Pizza{
 	public MargaritaPizza() {

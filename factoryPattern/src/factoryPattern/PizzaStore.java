@@ -1,4 +1,4 @@
-package FactoryPattern;
+package factoryPattern;
 
 public abstract class PizzaStore {
 	public PizzaStore() {
@@ -19,4 +19,3 @@ public abstract class PizzaStore {
 	}
 	 abstract Pizza createPizza(String type);
 }
-

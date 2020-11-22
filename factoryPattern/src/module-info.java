@@ -1,2 +1,2 @@
-module factortyPattern {
+module factoryPattern {
 }

@@ -1,4 +1,4 @@
-package FactoryPattern;
+package factoryPattern;
 
 public class ReginaPizza extends Pizza {
 	public ReginaPizza() {
@@ -11,3 +11,4 @@ public class ReginaPizza extends Pizza {
 		toppings.add("egg");
 	}
 }
+
