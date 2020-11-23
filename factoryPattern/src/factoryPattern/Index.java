@@ -4,8 +4,10 @@ public class Index {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		GermanPizzaStore germanStore = new GermanPizzaStore();
-		Pizza pizza1 = germanStore.orderPizza("Frida");
 		ItalianPizzaStore italianStore = new ItalianPizzaStore();
-		Pizza pizza2 = italianStore.orderPizza("Regina");
+		Pizza pizza1 = germanStore.orderPizza("Cheese");
+		Pizza pizza2 = italianStore.orderPizza("Pepperoni");
+		Pizza pizza3 = germanStore.orderPizza("Ham");
+		Pizza pizza4 = italianStore.orderPizza("Veggie");
 	}
 }

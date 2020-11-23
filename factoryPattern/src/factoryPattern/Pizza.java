@@ -1,22 +1,29 @@
 package factoryPattern;
 
-
-import java.util.ArrayList;
+import factoryPattern.factory.PizzaIngredientFactory;
 
 public abstract class Pizza {
-	String name;
-	String dough;
-	String sauce;
-	ArrayList<String> toppings = new ArrayList<String>();
+	public String name;
+	public Ingredient dough;
+	public Ingredient sauce;
+	public Ingredient cheese;
+	public Ingredient ham;
+	public Ingredient pepperoni;
+	public Ingredient[] veggies;
+
+	PizzaIngredientFactory factory;
+	
+	
+	public Pizza(PizzaIngredientFactory factory) {
+			this.factory = factory;
+	}
+
 	
 	public void prepare() {
 		System.out.println("-------- Pizza preparation --------");
 		System.out.println(String.format("Starting preparation of the %s.", name));
-		System.out.println(String.format("Making %s", dough));
-		System.out.println(String.format("Spreading %s sauce on top of the pizza", sauce));
-		toppings.forEach(topping -> {
-			System.out.println(String.format("Adding %s on top of the pizza", topping));
-		});
+		System.out.println(String.format("Making %s", dough.name));
+		System.out.println(String.format("Spreading %s sauce on top of the pizza", sauce.name));
 	}
 	
 	public void bake() {
@@ -32,10 +39,7 @@ public abstract class Pizza {
 	}
 	
 	public void describe() {
-		System.out.println(String.format("dough: %s, sauce: %s, toppings: ", dough, sauce));
-		toppings.forEach(topping -> {
-			System.out.println(topping);
-		});
+		System.out.println(String.format("dough: %s, sauce: %s: ", dough, sauce));
 	}
 	
 	public String getName() {
